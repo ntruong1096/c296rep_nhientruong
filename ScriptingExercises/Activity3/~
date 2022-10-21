@@ -1,0 +1,10 @@
+#! /bin/sh
+
+RESULT=./lottery_result
+for i in {1..5}
+do
+	random_fifty=$(($RANDOM%50+1))
+	echo $rfifty>>$RESULT
+done
+random_ten=$(($RANDOM%10+1))
+echo $random_ten>>$RESULT
